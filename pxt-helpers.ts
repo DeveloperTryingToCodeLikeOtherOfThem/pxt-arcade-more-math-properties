@@ -200,7 +200,7 @@ namespace Math {
      */
     //% shim=Math_::iadd 
     // it is not really exist it just thinks it is builtin already just for making it exposed as a core function
-    //% blockId="math_iadd" block="interger + %x %y"
+    //% blockId="math_iadd" block="%x interger + %y"
     //% weight=50
     export function iadd(x: number, y: number): number {
         return (getInt32(x) + getInt32(y))
@@ -212,7 +212,7 @@ namespace Math {
     Returns the value of integer signed 32 bit subtraction of two numbers
      */
     //% shim=Math_::sub
-    //% blockId="math_isub" block="interger - %x %y"
+    //% blockId="math_isub" block="%x interger - %y"
     //% weight=49
     export function isub(x: number, y: number): number {
         return (getInt32(x) - getInt32(y))

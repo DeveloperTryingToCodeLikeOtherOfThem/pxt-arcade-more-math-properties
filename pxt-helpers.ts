@@ -113,6 +113,14 @@ namespace Math {
     }
 
     /**
+     * @returns the same as the pythagorean theorem
+     */
+    //% blockId="Math_magnitude" block="magnitude %dx %dy"
+    export function magnitude(dx: number, dy: number): number {
+      return Math.sqrt(dx ** 2 + dy ** 2)
+    }
+
+    /**
      * @returns — a random boolean value
      */
     //% blockId="math_random_boolean"

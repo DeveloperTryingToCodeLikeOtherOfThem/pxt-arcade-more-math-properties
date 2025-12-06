@@ -163,7 +163,7 @@ Returns the natural logarithm (base e) of a number.
      */
     function log(x: number): number;
      // for internal functions now public for users to use 
-    //% shim=Math_::exp blockId="math_log"
+    //% shim=Math_::exp blockId="math_exp"
     //% block="exp %x"
    /**
     * Returns returns e^x.

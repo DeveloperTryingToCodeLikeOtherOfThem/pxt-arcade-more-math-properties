@@ -86,7 +86,7 @@ namespace Math {
      * @param x A number
      */
     //% blockId="Math_cot"
-    //% block="cotangent %x"
+    //% block="cot %x"
     //% shim=Math_::cot
     export function cot(x: number): number {
         return Math.tan(x) / 1
@@ -97,7 +97,7 @@ namespace Math {
     * @param x A number
     */
     //% blockId="Math_sec"
-    //% block="secant %x"
+    //% block="sec %x"
     export function sec(x: number): number {
         return Math.cos(x) / 1
     }
@@ -107,7 +107,7 @@ namespace Math {
      * @param x A number
      */
     //% blockId="Math_csc"
-    //% block="cosecant %x"
+    //% block="csc %x"
     export function csc(x: number): number {
         return Math.sin(x) / 1
     }
@@ -200,7 +200,7 @@ namespace Math {
      */
     //% shim=Math_::iadd 
     // it is not really exist it just thinks it is builtin already just for making it exposed as a core function
-    //% blockId="math_iadd" block="interger add %x %y"
+    //% blockId="math_iadd" block="interger + %x %y"
     //% weight=50
     export function iadd(x: number, y: number): number {
         return (getInt32(x) + getInt32(y))
@@ -212,7 +212,7 @@ namespace Math {
     Returns the value of integer signed 32 bit subtraction of two numbers
      */
     //% shim=Math_::sub
-    //% blockId="math_isub" block="interger subtract %x % y"
+    //% blockId="math_isub" block="interger - %x % y"
     //% weight=49
     export function isub(x: number, y: number): number {
         return (getInt32(x) - getInt32(y))

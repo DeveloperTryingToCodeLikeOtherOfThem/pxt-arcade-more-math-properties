@@ -27,6 +27,18 @@ namespace Math {
         return [(-b + discriminant) / (2 * a), (-b - discriminant) / (2 * a)]
     }
 
+
+     /** 
+      * Returns the slope of a number 
+      * @param x0 A number
+      * @param x1 A number 
+      * @param y0 A number 
+      * @param y1 A number
+     */
+    export function slope(x0: number, x1: number, y0: number, y1: number): number {
+        return ((y1 - y0) / (x1 - x0))
+    }
+
     /**
      * Returns the angle of the number 
      @param angleDeg A number 
@@ -42,11 +54,12 @@ namespace Math {
     }
 
     /**
-     * @returns — the arc length of the number
+     * Returns — the arc length of the number
      @param circ A number
      */
     //% blockId="math_arc"
     //% block="arc %circ"
+    //% shim="Math_::arc"
     export function arc(circ: number): number {
         return (Math.OneSixth * circ)
     }
@@ -57,12 +70,13 @@ namespace Math {
      */
     //% blockId="math_circumfrence"
     //% block="circumfrence %r"
+    //% shim="Math_::circumfrence"
     export function circumfrence(r: number): number {
         return 2 * Math.PI * r
     }
 
     /** 
-     * @returns — the degrees of the number 
+     * Returns — the degrees of the number 
      @param degrees A number
      */
     //% blockId="math_get_degrees"
@@ -72,7 +86,7 @@ namespace Math {
     }
 
     /**
-  * @returns — the radians of the number
+  * Returns — the radians of the number
   @param radians A number
   */
   //% blockId="math_get_radians"
@@ -82,7 +96,7 @@ namespace Math {
     }
 
     /**
-     * @returns the cotangent of the number
+     * Returns the cotangent of the number
      * @param x A number
      */
     //% blockId="Math_cot"
@@ -93,7 +107,7 @@ namespace Math {
     }
 
     /**
-    * @returns the secant of the number
+    * Returns the secant of the number
     * @param x A number
     */
     //% blockId="Math_sec"
@@ -103,7 +117,7 @@ namespace Math {
     }
 
     /**
-     * @returns the cosescant of the number 
+     * Returns the cosescant of the number 
      * @param x A number
      */
     //% blockId="Math_csc"
@@ -113,7 +127,7 @@ namespace Math {
     }
 
     /**
-     * @returns the same as the pythagorean theorem
+     * Returns the same as the pythagorean theorem
      */
     //% blockId="Math_magnitude" block="magnitude %dx %dy"
     export function magnitude(dx: number, dy: number): number {
@@ -121,7 +135,7 @@ namespace Math {
     }
 
     /**
-     * @returns — a random boolean value
+     * Returns — a random boolean value
      */
     //% blockId="math_random_boolean"
     //% block="random boolean"
@@ -134,7 +148,7 @@ namespace Math {
 //% advanced=true
 namespace Math.helpers {
     /**
-     * Returs the bit as a interger signed bit 32
+     * Returns the bit as a interger signed bit 32
      */
     //% blockId="math_helpers_int_32"
     //% block="get int 32 %v"
